@@ -1,0 +1,653 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>verian class | the best Online Learning and Education materials </title>
+    <script src="https://kit.fontawesome.com/a9a0162cbf.js" crossorigin="anonymous"></script>
+   
+   
+
+    <style>
+        #navbar{
+            position: absolute;
+            display: flex;
+            align-items: center;
+            background: rgb(0, 100,0);
+            width: 100%;
+            height: 64px;
+        }
+      
+        #logo{
+            margin: 10px  20px;
+        }
+
+        #logo img{
+            height: 60px;
+            width: 157px;
+            margin: -14px -20px;
+        }
+
+        #navbar ul{
+            display: flex;
+        }
+        #navbar ul li{
+            list-style: none;
+            font-size: 1.3rem;
+        }
+        #navbar ul li:hover{
+            background: fuchsia;
+            border-radius: 10px;
+            cursor: pointer;
+           
+        }
+
+        #navbar ul li a{
+            color:white;
+            display: block;
+            padding: 3px 30px;
+            text-decoration: none;
+           
+        }
+       
+        #navbar ul li a:hover{
+            color: white;
+        }
+
+        .fa-solid{
+           color: white;
+           margin-left: 8px;
+          margin-top: 5px;
+          float: right;
+          width: 5px;
+          height: 5px;
+           
+       }
+        #home{
+            display: flex;
+            flex-direction: column;
+            padding: 3px 200px;
+            justify-content: center;
+            align-items: center;
+        }
+        #home::before{
+            content: "";
+            position: absolute;
+            background: url("assets/img/");
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            opacity: 0.90;
+            background-repeat: no-repeat;
+    
+        }
+
+        #home h1{
+            color: white;
+            margin: 10px;
+            margin-top: 166px;
+        }
+
+        
+        
+        .h-primary{
+            font-size: 1.8rem;
+            padding: 0px;
+            text-align: center;
+        }
+
+        
+        
+       
+      
+footer{
+    width: 97%;
+    height: 230px;
+    position: relative;
+    background: linear-gradient(to right, #00093c,#2d0b00 );
+    color: #fff;
+    padding: 100px 30px;
+    line-height: 20px;
+    border-top-left-radius: 125px;
+    font-size: 13px;
+}
+.row{
+    width: 85%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+.col{
+    flex-basis: 20%;
+    padding: 10px;
+}
+
+p{
+    color: gray;
+}
+
+.logo{
+width: 141px;
+height: 40px;
+margin-top: 29px;
+}
+.col h3{
+    width: fit-content;
+    position: relative;
+    margin-bottom: 18px;
+    margin-inline: 34px;
+}
+
+.hide{
+    font-size: 21px;
+   
+}
+ul li{
+    list-style: none;
+    margin-bottom: 3px;
+    margin-inline: 0px;
+
+}
+
+ul li a{
+    text-decoration: none;
+    color: gray;
+}
+
+ .col .sub{
+    font-size: 21px;
+    margin-inline: 0px;
+}
+
+form{
+    padding-bottom: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 50px;
+}
+
+form .far{
+    font-size: 15px;
+    margin-right: 10px;
+}
+
+form input{
+    width: 100%;
+    background: transparent;
+    color: #ccc;
+    outline: none;
+    border: 0;
+}
+
+form button{
+    background: blue;
+    border: 0;
+    outline: none;
+    cursor: pointer;
+}
+
+form button .fa{
+    font-size: 10px;
+    color:#ccc;
+}
+
+hr{
+    width: 100%;
+    border: 0;
+    border-bottom:  1px solid #ccc;
+    margin: 2px auto;
+}
+
+.copyright{
+    text-align: center;
+}
+
+.social-icons .fa-brands{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 40px;
+    font-size: 20px;
+    color:#000;
+    background: #fff;
+    margin-left: 12px;
+    cursor: pointer;
+}
+
+.underline{
+    width: 100%;
+    height: 5px;
+    background: #767676;
+    border-radius: 4px;
+    position: absolute;
+    top: 28px;
+    left: 0;
+    overflow: hidden;
+
+}
+
+.underline span{
+    width: 15px;
+    height: 100%;
+    background: #fff;
+    border-radius: 3px;
+    position: absolute;
+    top: 0;
+    left: 10px;
+    animation: moving 3s linear infinite;
+
+
+}
+
+@keyframes moving{
+    0%{
+        left: -20px;
+    }
+
+    100%{
+        left: 100px;
+    }
+}
+
+.sub-menu-1{
+    display: none;
+}
+
+#navbar ul li:hover  .sub-menu-1{
+    display: block;
+    position: absolute;
+    background:#fff;
+    margin-top: 18px;
+    margin-left: -15px;
+    cursor: pointer;
+}
+
+#navbar ul li:hover  .sub-menu-1 ul{
+    display: block;
+    margin: 10px;
+}
+
+#navbar ul li:hover  .sub-menu-1 ul li{
+    width: 170px;
+    padding: 4px;
+    border-bottom: 1px  solid gray;
+    background: transparent;
+    border-radius: 0;
+    text-align: left;
+    margin-left: -50px;
+}
+#navbar ul li:hover .sub-menu-1 ul li:last-child
+{
+    border-bottom: none;
+}
+
+#navbar ul li:hover  .sub-menu-1 ul li a{
+   margin-left: -30px;
+    font-size: 1.1rem;
+    color: gray;
+}
+
+#navbar ul li:hover  .sub-menu-1 ul li a:hover{
+
+    color: blue;
+
+}
+
+.container{
+    position: relative;
+    min-width: 1100px;
+    margin-top: 100px;
+    height: 550px;
+    z-index: 100;
+    margin-top: 216px;
+    margin-bottom: 100px;
+    
+}
+
+
+.container .contact-info{
+    position: absolute;
+    top: 40px;
+    width: 350px;
+    height: calc(100% - 80px);
+    background: #095955;
+    z-index: 1;
+    justify-content: center;
+    justify-content: space-between;
+    flex-direction: column;
+    box-shadow: 0 20px 25px rgb(0 ,0,0,0,15);
+}
+
+.container .contact-info h2{
+    font-size: 40px;
+    font-weight: 500;
+     margin-left: 85px;
+}
+.container .contact-info .info {
+    position: relative;
+    margin: 20px 0;
+}
+
+.container .contact-info .text{
+   color: #fff;
+   margin-left: 5px;
+}
+
+
+.container .contact-info .info li{
+    position: relative;
+    list-style: none;
+    display: flex;
+    margin: 20px 0;
+    cursor: pointer;
+    align-items: flex-start;
+    margin-top: 40px;
+  
+}
+
+.container .contact-info .info li span :nth-child(1){
+    width: 30px;
+    min-width: 30px;
+}
+.container .contact-info .info li span :nth-child(1) img{
+
+    max-width: 100%;
+    filter: invert(1);
+    opacity: 0.5;
+}
+
+.container .contact-info .info li span :nth-child(2){
+    color: #fff;
+    margin-left: 10px;
+    font-weight: 300;
+    opacity: 0.5;
+}
+
+.container .contact-info .info li :hover span :nth-child(1) img,
+.container .contact-info .info li:hover span :nth-child(2){
+    opacity: 1;
+}
+ .container .contact-form{
+    position: absolute;
+    padding: 70px 50px;
+    background:white; 
+    margin-left: 150px;
+    padding-left: 250px;
+    width: calc(100% - 150px);
+    height: 76%;
+    box-shadow: 0 50px 50px rgba(238, 198, 198, 0.5);
+    width: 49%;
+    border: 1px solid gray;
+}
+
+.container .contact-form h2{
+    color: #0f3959;
+    font-size: 24px;
+    font-weight: 500;
+}
+
+.container .contact-form .form-box{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding-top: 30px;
+}
+.container .contact-form .form-box .input-box{
+   position: relative;
+   margin-bottom: 35px;
+}
+.container .contact-form .form-box .input-box.w50{
+    width: 47%;
+}
+.container .contact-form .form-box .input-box.w100{
+    width: 100%;
+    }
+
+.container .contact-form .form-box .input-box input,
+.container .contact-form .form-box .input-box textarea{
+    width: 100%;
+    padding: 5px 0;
+    resize: none;
+    font-size: 18px;
+    color: #333;
+    border: none;
+    font-weight: 300;
+    outline: none;
+    border-bottom: 1px solid #777;
+}
+.container .contact-form .form-box .input-box span{
+    position: absolute;
+    left: 0;
+    padding: 5px 0;
+    pointer-events: none;
+    font-size: 18px;
+    font-weight: 300;
+    transition: 0.3s;
+}
+
+.container .contact-form .form-box .input-box input:focus ~ span,
+.container .contact-form .form-box .input-box input:valid ~ span,
+.container .contact-form .form-box .input-box textarea:focus ~ span,
+.container .contact-form .form-box .input-box textarea:valid ~ span{
+
+    transform:  translateY(-20px);
+    font-size: 12px;
+    font-weight: 400;
+    letter-spacing: 1px;
+    color: #095a55;
+    font-weight: 500;
+}
+
+.container .contact-form .form-box .input-box input[type="submit"]{
+    position: relative;
+    cursor: pointer;
+    background: #095a55;
+    color: #fff;
+    border: none;
+    max-width: 150px;
+    padding: 12px;
+}
+.container .contact-form .form-box .input-box input[type="submit"]:hover{
+    background: #0d948b;
+}
+
+
+    </style>
+
+</head>
+<body>
+   <nav  id="navbar">
+        <div id="logo">
+            <img src="assets/img/logo-3.png">
+            </div>
+           
+            <ul>
+
+                <li class="item>"><a href="index.html">Home<i class="fa-solid fa-angle-down"></i></a>
+                    <div class="sub-menu-1">
+                        <ul>
+                            <li><a href="index.html">Home Style 1</a></li>
+                            <li><a href="#">Home Style 2</a></li>
+                           
+                        </ul>
+                    </div>
+                </li>
+                <li class="item"><a href="courses.html">Courses<i class="fa-solid fa-angle-down"></i></a>
+                    <div class="sub-menu-1">
+                        <ul>
+                            <li><a href="#">English Learning</a></li>
+                            <li><a href="#">Web Development</a></li> 
+                            <li><a href="#"> Android</a></li>
+                            <li><a href="#">Logo Design</a></li>
+                            <li><a href="#">Python</a></li>
+                            <li><a href="#">Java Development</a></li>
+                            <li><a href="#">Motion Graphics</a></li>
+                        </ul>
+                    </div>
+                
+                
+                </li>
+                <li class="item"><a href="#">Blog<i class="fa-solid fa-angle-down"></i></a>
+                    <div class="sub-menu-1">
+                        <ul>
+                            <li><a href="#">Blog</a></li>
+                            <li><a href="#">Blod Details</a></li>
+                           
+                        </ul>
+                    </div>
+                </li>
+
+                <li class="item"><a href="contact.html">About us<i class="fa-solid fa-angle-down"></i></a>
+                    <div class="sub-menu-1">
+                        <ul>
+                            <li><a href="#">instructor</a></li>
+                            <li><a href="#">instructor details</a></li>
+                            <li><a href="#">event-details</a></li>
+                            <li><a href="#">sign in</a></li>
+                            <li><a href="signup.html">sign up</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="item"><a href="contact.html">Contact</a></li>
+                
+    
+            </ul>
+        </nav>
+            <section id="home">
+                <h1 class="h-primary">welcome to best Learning platform</h1>
+            </section>
+
+
+            <section >
+                <div class="container">
+                <div class="contact-info">
+                <div>
+                <h2>Contact Info</h2>
+
+            </div>
+            <ul class="info">
+                <li>
+                    <span> <img src="assets/img/location.png"></span>
+                    <span class="text">H No 64 Lane No 04 Umar Colony Malik Market Narwall Bye Pass Jammu</span>
+                </li>
+
+                <li>
+                    <span> <img src="assets/img/email.png"></span>
+                    <span class="text">+91 6005626571</span>
+                </li>
+
+                <li>
+                    <span> <img src="assets/img/phone.png" alt=""></span>
+                    <span class="text">Murtazamalik1319@gmail.com</span>
+                </li>
+            </ul>
+            </div>
+
+            <div class="contact-form">
+                <h2>Send Message</h2>
+                <div class="form-box">
+                    <div class="input-box w50">
+                        <input type="text" name="" required>
+                        <span>First Name</span>
+                    </div>
+                    <div class="input-box w50">
+                        <input type="text" name="" required>
+                        <span>Last Name</span>
+                    </div>
+                    <div class="input-box w50">
+                        <input type="text" name="" required>
+                        <span>Email Addrrss</span>
+                    </div>
+                    <div class="input-box w50">
+                        <input type="text" required>
+                        <span>Phone No</span>
+                    </div>
+                    <div class="input-box w100">
+                       <textarea required> </textarea>
+                        <span>Write ur Message here</span>
+                    </div>
+                    <div class="input-box w100">
+                        <input type="submit" value="send">
+                    
+                    </div>
+                </div>
+                </div>
+            </div>
+
+            </section>
+
+           
+                           <footer>
+
+                            <div class="row">
+                                <div class="col">
+                                    <img src="assets/img/footer-logo.jpeg" class="logo">
+                                    <p>Great lesson ideas and lesson plans for ESL teachers! Educators can customize lesson plans to best</p>
+
+                                </div>       
+                                <div class="col">
+                                    <h3 class="hide">Company<div class="underline"><span></span></div></h3>
+                                    <ul>
+                                        <li><a href="#">About</a></li>
+                                        <li><a href="#">Courses</a></li>
+                                        <li><a href="#">Events</a></li>
+                                        <li><a href="#">Instructor</a></li>
+                                        <li><a href="#">Career</a></li>
+                                        <li><a href="#">Become a Teacher</a></li>
+                                        <li><a href="#">Contact</a></li>
+                                    </ul>
+
+                                </div>
+
+                                <div class="col">
+                                    <h3 class="hide">platform<div class="underline"><span></span></div></h3>
+                                    <ul>
+                                        <li><a href="#">Browse Library</a></li>
+                                        <li><a href="#">Library</a></li>
+                                        <li><a href="#">Partners</a></li>
+                                        <li><a href="#">News & Blogs</a></li>
+                                        <li><a href="#">FAQs</a></li>
+                                        <li><a href="#">Tutorials</a></li>
+                                    </ul>
+
+                                </div>
+
+                                <div class="col">
+                                    <h3 class="sub">Subscribe<div class="underline"><span></span></div></h3>
+                                    <form>
+                                        <i class="fab-solid fa-envelope"></i>
+                                        <input type="email" placeholder="enter email id" required>
+                                        <button type="submit"><i class="fa-solid fa-arrow-right-long"></i>
+
+                                        </button>
+
+                                    </form>
+
+                                   <div class="social-icons">
+                                    <i class="fa-brands fa-facebook"></i>
+                                    <i class="fa-brands fa-instagram-square"></i>
+                                    <i class="fa-brands fa-twitter"></i>
+                                    <i class="fa-brands fa-whatsapp"></i>
+
+                                   </div>
+                                </div>
+                            </div>
+
+                            <hr>
+                            <p class="copyright">© 2022 Verian Classes, All Rights Reserved. Designe By Murtaza Malik </p>
+
+                           </footer>
+                          
+    
+                        
+</body>
+</html>
+  
+    

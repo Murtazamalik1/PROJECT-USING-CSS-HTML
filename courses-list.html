@@ -1,0 +1,538 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>verian class | the best Online Learning and Education materials </title>
+    <script src="https://kit.fontawesome.com/a9a0162cbf.js" crossorigin="anonymous"></script>
+
+    <style>
+        #navbar{
+            position: fixed;
+            top: 0;
+            left: 0;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            transition: 0.6s;
+            z-index: 100000;
+
+        }
+       
+        #navbar::before{
+            content: "";
+            background-color:cadetblue;
+            height: 56px;
+            width: 100%;
+            position: fixed;
+            z-index: -1;
+            opacity: 0.2;
+            margin-top: 0px;
+
+        }
+
+        #logo{
+            margin: 10px  20px;
+        }
+
+        #logo img{
+            height: 60px;
+            width: 157px;
+            margin: -14px -20px;
+        }
+
+        #navbar ul{
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+        }
+        #navbar ul li{
+            position: relative;
+            list-style: none;
+            font-size: 1.3rem;
+          
+        }
+
+        #navbar ul li a{
+            color:white;
+            display: block;
+            padding: 3px 18px;
+            text-decoration: none;
+            border-radius: 20px;
+           
+            
+        }
+      
+        #navbar .button a{
+            color: white;
+            padding: 5px 34px;
+            text-decoration: none;
+            cursor: pointer;
+            border-radius: 0px;
+            margin-left: 424px;
+            background: darkblue;
+
+        }
+        #navbar ul li button :hover{
+            color: white;
+            background-color: blue;
+
+        }
+        #navbar ul li a:hover{
+            color: white;
+            background-color:blue ;
+
+        }
+    
+     
+        #acces{
+           
+            margin-top: 104px;
+            margin-right: 82%;
+            font-size: 28px;
+            color: black;
+        }
+        .home h1{
+            margin-right: 569px;
+            margin-top: -24px;
+        }
+
+        .header{
+            font-size: 2.8rem;
+            padding: 12px;
+            margin-top: 59px;
+            margin-left: 117px;
+        }
+        .h-primary{
+            font-size: 1.8rem;
+            padding: 0px;
+            text-align: center;
+        }
+        .h-secondary{
+            text-align: center;
+            color:gray;
+        }
+
+footer{
+    width: 97%;
+    height: 230px;
+    position: relative;
+    background: linear-gradient(to right, #00093c,#2d0b00 );
+    color: #fff;
+    padding: 100px 30px;
+    line-height: 20px;
+    border-top-left-radius: 125px;
+    font-size: 13px;
+}
+.row{
+    width: 85%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+.col{
+    flex-basis: 20%;
+    padding: 10px;
+}
+
+p{
+    color: gray;
+}
+
+.logo{
+width: 141px;
+height: 40px;
+margin-top: 29px;
+}
+.col h3{
+    width: fit-content;
+    position: relative;
+    margin-bottom: 18px;
+    margin-inline: 34px;
+}
+
+.hide{
+    font-size: 21px;
+   
+}
+ul li{
+    list-style: none;
+    margin-bottom: 3px;
+    margin-inline: 0px;
+
+}
+
+ul li a{
+    text-decoration: none;
+    color: gray;
+}
+
+ .col .sub{
+    font-size: 21px;
+    margin-inline: 0px;
+}
+
+form{
+    padding-bottom: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 50px;
+}
+
+form .far{
+    font-size: 15px;
+    margin-right: 10px;
+}
+
+form input{
+    width: 100%;
+    background: transparent;
+    color: #ccc;
+    outline: none;
+    border: 0;
+}
+
+form button{
+    background: blue;
+    border: 0;
+    outline: none;
+    cursor: pointer;
+}
+
+form button .fa{
+    font-size: 10px;
+    color:#ccc;
+}
+
+hr{
+    width: 100%;
+    border: 0;
+    border-bottom:  1px solid #ccc;
+    margin: 2px auto;
+}
+
+.copyright{
+    text-align: center;
+}
+
+.social-icons .fa-brands{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 40px;
+    font-size: 20px;
+    color:#000;
+    background: #fff;
+    margin-left: 12px;
+    cursor: pointer;
+}
+
+.underline{
+    width: 100%;
+    height: 5px;
+    background: #767676;
+    border-radius: 4px;
+    position: absolute;
+    top: 28px;
+    left: 0;
+    overflow: hidden;
+
+}
+
+.underline span{
+    width: 15px;
+    height: 100%;
+    background: #fff;
+    border-radius: 3px;
+    position: absolute;
+    top: 0;
+    left: 10px;
+    animation: moving 3s linear infinite;
+
+
+}
+
+@keyframes moving{
+    0%{
+        left: -20px;
+    }
+
+    100%{
+        left: 100px;
+    }
+}
+
+#search-box{
+    background-color: #fff;
+    border: none;
+    font-size: 14px;
+    font-weight: bold;
+    padding: 5px;
+    float: left;
+    margin-left: -10px;
+    width: 318px;
+}
+
+#search-icon{
+  width: 55px;
+  height: 43px;
+  margin-left: -56px;
+ 
+}
+.logo-box img{
+    width: 50px;
+    height: 40px;
+}
+#acces-p{
+    margin-right: 640px;
+    color: black;
+    font-size: 18px;
+    margin-top: -17px;
+}
+.services-container{
+    margin-top: 68px;
+}
+
+.box-list{
+            position: relative;
+            width: 80%;
+            display: flex;
+            background:#fff;
+            height: 417px;
+            margin-bottom: 100px;
+            margin-top: -55px;
+            margin-left: 80px;
+           
+        }
+       
+
+     .course-1{
+        width: 790px;
+        height: 450px;
+     }
+     .course-2{
+         margin-left: 100px;
+         border-radius: 19px;
+         display: block;
+        
+     }
+   
+.box-list h2{
+  margin-left: 442px;
+  margin-top: -293px;
+  font-size: 35px;
+
+}
+.box-list h2:hover{
+    color: blue;
+    cursor: pointer;
+}
+
+.free {
+    color: lightseagreen;
+    margin-top: 15px;
+    margin-left: 441px;
+    font-size: 24px;
+}
+.free:hover{
+    cursor: pointer;
+}
+.free a{
+    list-style: none;
+    color: darkmagenta;
+    text-align: none;
+
+}
+.development{
+   margin-top: 200px;
+   display: flex;
+   justify-content: space-between;
+   margin-left: 100px;
+}
+.development img{
+ margin-left: -429px;
+ height: 285px;
+ width: 235px;
+ z-index: 10;
+}
+
+.development ul 
+    { 
+        position: relative;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+    }
+    .development ul li a{
+        color: gray;
+        display: block;
+         padding: 3px 18px;
+        text-decoration: none;
+        border-radius: 20px;
+    }
+
+    .development ul li{
+        position: relative;
+        list-style: none;
+        font-size: 18px;
+    }
+     .item-list{
+        margin-top: 107px;
+        margin-right: -131px; 
+        background: green;
+        border-radius: 4px;
+        color: #fff;
+      }
+      .head-100{
+          font-size: 40px;
+          margin-top: -81px;
+          margin-left: 116px;
+}
+.development .event-shape-3{
+  margin-left: 666px;
+  width: 88px;
+  height: 141px;
+}
+
+.image-2 p{
+    margin-top: 10p;
+    margin-left: 146px;
+    margin-top: -3%;
+    margin-bottom: 50px;
+   
+}
+.image-2  h2{
+ margin-left: 143px;
+ font-size: 14px;
+ margin-top: -44px;
+ margin-bottom: 64px;
+}
+
+    </style>
+
+</head>
+<body>
+   <nav  id="navbar">
+        <div id="logo">
+            <img src="assets/img/logo-3.png">
+            </div>
+            <ul>
+
+                <li class="item>"><a href="#">Home</a></li>
+                <li class="item"><a href="#">Courses</a></li>
+                <li class="item"><a href="#">Blog</a></li>
+                <li class="item"><a href="#">About us</a></li>
+                <li class="item"><a href="contact.html">Contact</a></li>
+                <li class="button"><a href="signup.html">Sign up</a></li>
+               
+               
+               
+            </ul>
+        </nav>
+        <section>
+            <div class="development">
+            <ul>
+                <li class="item-list">Development</li>
+                <li class="item-btn"><a href="">Home</a></li>
+                <li class="item-btn"><a href="">Courses</a></li>
+                <img src="assets/img/sign up/sign-up.png">
+                <img class="event-shape-3" src="assets/img/blog/event-shape-3.png">
+
+            </ul>
+        </div>
+          
+            <h1 class="head-100">The business Intelligence analyst <br>Course 2022</h1>
+       
+        </section>
+            <section >
+                <div class="services-container">
+            <div class="box-list">
+                    <img class="course-1" src="assets/img/course/course-2.jpg">  
+
+                </div>
+</div>
+<div class="image-2">
+<img class="course-2" src="assets/img/blog/author-1.jpg">
+<p>Teacher</p>
+<h2>Tajamul Hussain</h2>
+</div>
+
+            </section>
+                                  
+                           <footer>
+
+                            <div class="row">
+                                <div class="col">
+                                    <img src="assets/img/footer-logo.jpeg" class="logo">
+                                    <p>Great lesson ideas and lesson plans for ESL teachers! Educators can customize lesson plans to best</p>
+
+                                </div>
+                               
+                                <div class="col">
+                                    <h3 class="hide">Company<div class="underline"><span></span></div></h3>
+                                    <ul>
+                                        <li><a href="#">About</a></li>
+                                        <li><a href="#">Courses</a></li>
+                                        <li><a href="#">Events</a></li>
+                                        <li><a href="#">Instructor</a></li>
+                                        <li><a href="#">Career</a></li>
+                                        <li><a href="#">Become a Teacher</a></li>
+                                        <li><a href="#">Contact</a></li>
+                                    </ul>
+
+                                </div>
+
+                                <div class="col">
+                                    <h3 class="hide">platform<div class="underline"><span></span></div></h3>
+                                    <ul>
+                                        <li><a href="#">Browse Library</a></li>
+                                        <li><a href="#">Library</a></li>
+                                        <li><a href="#">Partners</a></li>
+                                        <li><a href="#">News & Blogs</a></li>
+                                        <li><a href="#">FAQs</a></li>
+                                        <li><a href="#">Tutorials</a></li>
+                                    </ul>
+
+                                </div>
+
+                                <div class="col">
+                                    <h3 class="sub">Subscribe<div class="underline"><span></span></div></h3>
+                                    <form>
+                                        <i class="fab-solid fa-envelope"></i>
+                                        <input type="email" placeholder="enter email id" required>
+                                        <button type="submit"><i class="fa-solid fa-arrow-right-long"></i>
+
+                                        </button>
+
+                                    </form>
+
+                                   <div class="social-icons">
+                                    <i class="fa-brands fa-facebook"></i>
+                                    <i class="fa-brands fa-instagram-square"></i>
+                                    <i class="fa-brands fa-twitter"></i>
+                                    <i class="fa-brands fa-whatsapp"></i>
+
+                                   </div>
+                                </div>
+                            </div>
+
+                            <hr>
+                            <p class="copyright">© 2022 Verian Classes, All Rights Reserved. Designe By Murtaza Malik </p>
+
+                           </footer>
+                          
+    
+            
+</body>
+</html>
+  
+    
